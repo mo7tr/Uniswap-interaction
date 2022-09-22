@@ -46,7 +46,7 @@ module.exports = async function (deployer, network, accounts) {
     1663921878
   );
 
-  //user balance before transaction:
+  //user balance after transaction:
   let balanceAfter = await token.methods.balanceOf(accounts[0]).call();
   console.log("balanceAfter =>", balanceAfter);
 
